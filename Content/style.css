@@ -1,0 +1,112 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.pageHeader {
+  background-color: #333;
+  padding: 20px 0;
+  position: relative;
+  text-align: center;
+}
+
+.pageHeader ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.pageHeader li {
+  display: inline;
+}
+
+.pageHeader a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 16px;
+  transition: background 0.3s;
+}
+
+.pageHeader .active a,
+.pageHeader a:hover {
+  background-color: #0077cc;
+  border-radius: 4px;
+}
+
+.Main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+.content article {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content article h2 a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.content article h2 a:hover {
+  text-decoration: underline;
+}
+
+.top-sidebar, .bottom-sidebar {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
+}
+
+.navigation {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.navigation li {
+  margin: 10px 0;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: #0077cc;
+}
+
+.navigation a:hover {
+  text-decoration: underline;
+}
+
+.pageFooter {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+
+.logo {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 120px;
+  height: auto;
+}
